@@ -11,7 +11,7 @@ A simple browser-based side-scrolling game where the player must jump to avoid o
 
 ## 🖼 Screenshot
 
-_Insert your wireframe or gameplay screenshot here._
+
 
 ## 📦 Technologies Used
 
