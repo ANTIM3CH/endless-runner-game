@@ -4,22 +4,44 @@ body {
   font-family: sans-serif;
 }
 
-/* The main game area */
+
 #game {
   display: flex;
   width: 100vw;
   height: 80vh;
-  background-color: #ccf2ff;
+  background-image: url("public/images/bgROLL1.png"),
+    url("public/images/bgROLL2.png");
+  background-size: 200vw 100%;
+  background-repeat: repeat-x;
+  background-position: 0 bottom;
+  animation: scrollBg 20s linear infinite;
+  animation-play-state: paused;
   position: absolute;
   overflow: hidden;
   justify-content: start;
   align-items: flex-end;
+  z-index: 0;
+}
+@keyframes scrollBg {
+  0% {
+    background-position: 0 bottom;
+  }
+  100% {
+    background-position: -200vw bottom;
+  } 
+}
+
+#player,
+.obstacle {
+  will-change: transform;
 }
 
 #player {
-  width: 50px;
-  height: 50px;
-  background-color: black;
+  width: 70px;
+  height: 70px;
+  background-image: url("public/images/player_run_2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
   bottom: 0;
   left: 50px;
@@ -57,10 +79,22 @@ body {
 .obstacle {
   width: 50px;
   height: 50px;
-  background-color: green;
+  background-image: url("public/images/platform_4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
   position: absolute;
   bottom: 0;
-  right: -60px;
+  left: 100vw;
+  z-index: 1;
+
+  animation: moveObstacle 2s linear forwards;
+  animation-play-state: running;
+}
+
+.obstacle.frozen {
+  animation-play-state: paused;
+  filter: grayscale(1);
 }
 
 #score {
@@ -73,10 +107,10 @@ body {
 
 @keyframes moveObstacle {
   from {
-    right: -50px;
+    transform: translateX(0);
   }
   to {
-    right: 100vw;
+    transform: translateX(-150vw); 
   }
 }
 
@@ -108,7 +142,7 @@ body {
   display: flex;
   width: 100vw;
   height: 20vh;
-  background-color: #724f37;
+  background-color: rgb(85, 85, 85);
   position: absolute;
   bottom: 0;
 }

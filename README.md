@@ -1,47 +1,36 @@
-# 🏃‍♂️ Endless Runner
+Endless Runner
+A lightweight browser-based game where the player jumps over incoming obstacles and survives as long as possible. The game gets faster and more intense over time.
 
-A simple browser-based side-scrolling game where the player must jump to avoid obstacles and survive as long as possible.
+How to Play
+Press the spacebar to jump.
 
-## 🎮 How to Play
+Avoid all obstacles — hitting one ends the game.
 
-- Press any key to start.
-- Press the space bar to jump.
-- Avoid all obstacles — if you hit one, it’s game over.
-- Try to survive as long as possible and beat your high score!
+Survive longer to earn more points.
 
-## 🖼 Screenshot
+Difficulty increases every 10 seconds.
 
+Features
+Responsive jump mechanics
 
+Progressive difficulty scaling
 
-## 📦 Technologies Used
+Random and burst-based obstacle spawning
 
-- HTML
-- CSS (Flexbox)
-- JavaScript (DOM manipulation)
-- GitHub Pages (for deployment)
+Live score system with bonus increments
 
-## 🚀 Getting Started
+Built With
+HTML, CSS (Flexbox), JavaScript
 
-[Play the Game](<insert link after deployment>)
+Vanilla JS only — no libraries
 
-## 🧠 Planning
+The Plan
+View Project Plan
+< [Notion.so link](https://www.notion.so/Module-1-Project-Outline-1e52664146fa80928db7c0ae2e7736f3) >
 
-- [Notion Game Plan](<insert link>)
+Future Ideas
+Add power-ups or different obstacle types
 
-## 🧩 Features
+Optimize for mobile input
 
-- Endless scrolling obstacles
-- Jump physics
-- Score tracking
-- Start and Game Over screens
-
-## 🙏 Attributions
-
-- Placeholder art from OpenGameArt (if used)
-- Sound effects from Freesound.org (if used)
-
-## 🔮 Future Enhancements
-
-- Add multiple types of obstacles
-- Power-ups (like temporary flight or invincibility)
-- Mobile controls
+Visual polish and sound effects
